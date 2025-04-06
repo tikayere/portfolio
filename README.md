@@ -160,10 +160,6 @@ Feel free to fork this repository and submit pull requests with improvements or 
 
 This project is licensed under the MIT License. See [LICENSE](./LICENSE) for details.
 
-## Acknowledgments
-
-- Built with inspiration from the Next.js and Shadcn UI communities.
-- Thanks to Framer Motion for awesome animations.
 
 ---
 
