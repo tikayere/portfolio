@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowUpRight, Github } from "lucide-react";
 import Image from "next/image";
+import { use } from  "react";
 
 const itemVariants = {
   hidden: { opacity: 0, y: 20 },
@@ -21,7 +22,8 @@ const itemVariants = {
   },
 };
 
-export default function ProjectDetail({ params }: { params: { id: string } }) {
+export default function ProjectDetail({ params: paramsPromise }: { params: Promise<{ id: string }> }) {
+  const params = use(paramsPromise);
   const project = projects.find((p) => p.id === parseInt(params.id));
   if (!project) return notFound();
 
